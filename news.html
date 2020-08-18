@@ -1,0 +1,202 @@
+﻿
+<!DOCTYPE HTML>
+<head>
+<title>Shoppe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		<div class="headertop_desc">
+			<div class="call">
+				 <p><span>Bạn cần hỗ trợ?</span> Gọi ngay <span class="number">0123456789</span></span></p>
+			</div>
+			<div class="account_desc">
+				<ul>
+					<li><a href="#">Đăng ký</a></li>
+					<li><a href="#">Đăng nhập</a></li>
+					<li><a href="#">Giao hàng</a></li>
+					<li><a href="#">Checkout</a></li>
+					<li><a href="#">My Account</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+			  <div class="cart">
+			  	   <p>Chào mừng bạn đến với Home Shoppe Online! <span>Giỏ hàng</span><div id="dd" class="wrapper-dropdown-2"> 0 sản phẩm(s) - 0₫
+			  	   	<ul class="dropdown">
+							<li>Bạn không có sản phẩm nào trong giỏ hàng</li>
+					</ul></div></p>
+			  </div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+	 <div class="clear"></div>
+  </div>
+	<div class="header_bottom">
+	     	<div class="menu">
+	     		<ul>
+			    	<li class="active"><a href="index.html">Trang chủ</a></li>
+			    	<li><a href="about.html">Giới thiệu</a></li>
+			    	<li><a href="delivery.html">Đặt hàng</a></li>
+			    	<li><a href="news.html">Tin tức</a></li>
+			    	<li><a href="contact.html">Liên hệ</a></li>
+			    	<div class="clear"></div>
+     			</ul>
+	     	</div>
+	     	<div class="search_box">
+	     		<form>
+	     			<input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+	     		</form>
+	     	</div>
+	     	<div class="clear"></div>
+	     </div>	     	
+   </div>
+ <div class="main">
+    <div class="content">
+    	<div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="picture/vivo-dual-wifi_1280x720-800-resize.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>OPPO và Vivo giới thiệu tính năng WiFi mới, tăng tốc độ tải </h3>
+					
+					<p>Trong nỗ lực trở nên nổi bật giữa một “rừng” các nhà sản xuất, OPPO và Vivo đang tìm cách làm kết nối WiFi của điện thoại trở nên đáng tin cậy hơn. Mới đây, 2 công ty con của BBK Electronics đã tiết lộ về việc những flagship tiếp theo mà họ phát hành sẽ sử dụng WiFi kép (Dual WiFi).</p>
+					<p>Trong một video, OPPO Reno 10x Zoom được giới thiệu sử dụng tính năng Dual Wi-Fi để kết nối với tần số 2.4 GHz và 5 GHz cùng lúc. Ý tưởng của việc này là tăng tính ổn định cũng như tốc độ tải xuống cho mạng Wi-Fi. Thực tế, đoạn video cho thấy tốc độ tải xuống của điện thoại sử dụng Dual WiFi tăng đến 322%. <a href="#" title="more">[....]</a></p>
+			   </div>
+		   </div>	
+		   <div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="picture/oppo_800x450.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>3 smartphone mới của OPPO được EEC chứng nhận </h3>
+					
+					<p>Có vẻ như OPPO đang lên kế hoạch rộng đường tại châu Âu, khi gần đây, hãng đã gửi đơn đăng ký hơn 20 nhãn hiệu smartphone đến Văn phòng Sở hữu Trí tuệ Châu Âu. Bây giờ, 3 chiếc smartphone mới khác của OPPO đã được chứng nhận bởi EEC (Cộng đồng Kinh tế châu Âu).</p>
+					<p>Các mẫu smartphone OPPO được chứng nhận có số model là CPH1931, CPH1941 và CPH1951. Ngày đăng ký lên EEC là ngày 8/7/2019. Thật tiếc, chứng nhận từ EEC không tiết lộ thêm bất kỳ thông tin cấu hình của các sản phẩm này. <a href="#" title="more">[....]</a></p>
+			   </div>
+		   </div>
+		   <div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="picture/5_1200x675-800-resize.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>Google Pixel 4 và Pixel 4 XL lộ ảnh render sắc nét, bộ camera giống iPhone 2019? </h3>
+					
+					<p>Nhờ vào leaker nổi tiếng @OnLeaks mà chúng ta sẽ thấy được trọn vẹn thiết kế của Google Pixel 4 và Pixel 4 XL. Vào đầu tháng này, @OnLeaks cũng đã chia sẻ 1 loạt hình ảnh của Pixel 4 XL.</p>
+					<p>Bộ ảnh lần này giúp chúng ta có thể so sánh giữa Google Pixel 4 và Pixel 4 XL. Như các bạn có thể thấy, cả 2 có thiết kế rất giống nhau. Pixel 4 chỉ là phiên bản nhỏ gọn hơn của Pixel 4 XL, không có lỗ khoét hay notch nào ở màn hình. Viền cạnh trên và dưới màn hình vẫn khá dày. Ngoài ra, mặt sau là cụm camera hình vuông ở góc trên bên trái, rất giống với những render iPhone 2019 xuất hiện gần đây. <a href="#" title="more">[....]</a></p>
+			   </div>
+		   </div>
+		   <div class="content-pagenation">
+						<li><a href="#">Trang đầu</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><span>....</span></li>
+						<li><a href="#">Trang cuối</a></li>
+						<div class="clear"> </div>
+					</div>	
+         </div> 
+    </div>
+ </div>
+   <div class="footer">
+   	  <div class="wrap">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>Thông tin</h4>
+						<ul></a></
+						<li><a href="about.html">Về chúng tôl</li>
+						<li><a href="#">Tuyển Dụng</a></li>						
+						<li><a href="#">Chính sách bảo mật</a></li>
+						<li><a href="#">Điều khoản sử dụng</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Hõ trợ khách hàng</h4>
+						<ul>
+						<li><a href="about.html">Các câu hỏi thường gặp</a></li>
+						<li><a href="contact.html">Gủi yêu cầu hỗ trợ</a></li>
+						<li><a href="#">Hướng dẫn đặt hàng</a></li>
+						<li><a href="contact.html">Phương thức vận chuyển</a></li>
+						<li><a href="#">Chính sách đổi trả</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Tài khoản của tôi</h4>
+						<ul>
+							<li><a href="contact.html">Đăng nhập</a></li>
+							<li><a href="index.html">Giỏ hàng</a></li>
+							
+							<li><a href="#">Đơn hàng</a></li>
+							<li><a href="contact.html">Trợ giúp</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>Liên hệ</h4>
+                    <ul>
+                        <li><span>0123.868.686</span></li>
+                        <li><span>0983.870.783</span></li>
+                    </ul>
+						<div class="social-icons">
+							<h4>Kết nối với chúng tôi</h4>
+					   		  <ul>
+							      <li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
+							      <li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>			
+        </div>
+        <div class="copy_right">
+				<p>&copy; 2019 Home Shoppe. All rights reserved | Design by Do Duc Nam</p>
+		   </div>
+    </div>
+    <script type="text/javascript">
+		$(document).ready(function() {			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop"><span id="toTopHover"> </span></a>
+</body>
+</html>
+
